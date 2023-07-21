@@ -1,0 +1,12 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <h1>Exotic: {{exotic.title}}</h1>
+    <p>User: {{exotic.user_name}}</p>
+    <p>Description: {{exotic.description}}</p>
+    <p><button type="submit"><a href="{% url 'exotic_update' exotic.pk %}">Update</a>
+    </button></p>
+    <p><button type="submit"><a href="{% url 'exotic_delete' exotic.pk %}">Delete</a>
+    </button></p>
+{% endblock content %}

@@ -1,0 +1,9 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<h1>List of exotics: </h1>
+    {% for exotic in object_list %}
+   <p> <a href="{% url 'exotic_detail' exotic.pk %}">{{ exotic.title }}</a></p>    
+    {% endfor %}    
+    <button type="submit"><a href="{% url 'exotic_create' %}"class="nav-link px-2 link-dark">Add an Exotic</a></button>
+{% endblock content %}

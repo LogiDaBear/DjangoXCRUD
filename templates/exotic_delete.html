@@ -1,0 +1,13 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<h1>Delete an Exotic</h1>
+  <form action="" method="POST">
+
+    {% csrf_token %}
+    {{ form.as_p}}
+    <p>Do you want to delete {{exotic.title}}?</p>
+    <input type="submit" value="OK">
+
+  </form>
+{% endblock content%}
