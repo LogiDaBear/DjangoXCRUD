@@ -1,4 +1,26 @@
+# DjangoX w/ CRUD
+### Author: Logan Reese
+### Setup
+See the documentation for DjangoX under DjangoX Template
 
+- .env requirements: none
+
+### Install dependencies
+#### NOTE: install django first as the template contains outdated django
+- pip install django
+- pip install -r requirements.txt
+
+### PORT
+localhost
+
+### How to initialize/run your application
+
+python manage.py runserver
+
+### Tests
+python manage.py test
+
+# DjangoX Template
 
 > A batteries-included Django starter project. To learn more try the books [Django for Beginners](https://djangoforbeginners.com), [Django for APIs](https://djangoforapis.com), and [Django for Professionals](https://djangoforprofessionals.com).
 
